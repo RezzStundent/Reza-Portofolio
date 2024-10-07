@@ -1,0 +1,198 @@
+
+
+
+body {
+  background-image: url(one.jpg);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  
+.onepage nav {
+  display: flex;
+background-color: #433878;
+border-bottom: 3px solid #7E60BF;
+
+}
+
+.onepage nav h1 {
+  font-size: 20px; /* Ukuran font untuk mobile */
+  margin: 0; /* Menghapus margin default */
+  color: yellow;
+  font-family: "Merriweather", system-ui;
+
+  font-style: normal; 
+}
+
+
+  .onepage nav h1 {
+    font-size: 1.2rem;
+    /* Ukuran font lebih kecil untuk handphone */
+  }
+
+
+.onepage ol li {
+  display: inline-block;
+  word-spacing: -9px;
+margin-left: 5vh;
+text-decoration: none;
+}
+
+.onepage ol li a {
+  position: relative;
+  text-decoration: none; /* Menghilangkan underline default */
+  color: #E4B1F0; /* Warna teks normal */
+  transition: color 0.3s ease; /* Transisi warna teks */
+}
+
+.onepage ol li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px; /* Jarak dari teks */
+  width: 0;
+  height: 2px; /* Ketebalan garis underline */
+  background: #007BFF; /* Warna garis underline */
+  transition: width 0.5s ease, left 0.5s ease; /* Transisi garis underline */
+}
+
+.onepage ol li a:hover {
+  color: yellow; /* Warna teks saat hover */
+}
+
+.onepage ol li a:hover::after {
+  width: 100%; /* Memperpanjang garis underline saat hover */
+  left: 0; /* Mengatur posisi ke kiri */
+}
+
+/* hanya untuk one page */
+/*hanya untuk two page */
+
+.twopage h1{
+  color: yellow;
+  text-shadow: 1px 2px  2px #7E60BF;
+}
+
+.twopage h2{
+  color: #E4B1F0;
+  text-shadow: 1px 2px  2px yellow;
+  border-bottom: 3px solid yellow
+}
+
+/*.twopage h4{
+  margin-top: 5%;
+  width: 215px;
+color: white;
+text-shadow: 1px 1px  1px black;
+  height: 300px;
+  overflow: auto;
+  font-size: 2px
+
+}
+
+.twopage h4:hover{
+  color: yellow;
+  font-size: 15px;
+transition: color 3s ease-in-out, font-size 3s ease-in-out; 
+}*/
+
+.twopage h4 {
+  margin-top: 5%;
+  width: 215px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  height: 300px;
+  overflow: auto;
+  font-size: 15px; /* Ukuran font awal */
+  transition: color 0.10s ease-in-out, font-size 0.7s ease-in; /* Transisi untuk warna dan ukuran font */
+}
+
+.twopage h4:hover {
+  color: yellow; /* Warna saat hover */
+ 
+}
+
+.twopage h4 span{
+  color: #E4B1F0;
+  text-shadow: 1px 2px 2px black;
+}
+
+.foto img{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin-left: 220px;
+  margin-top: -335px;
+}
+
+.buatline {
+  margin-top: 148px;
+  border-top: 3px solid yellow;
+}
+
+.buatline a{
+  display: none;
+}
+
+.bahan{
+  margin-top: 10px;
+text-align: center;
+font-size: 10px;
+}
+
+.bahasa img{
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  margin-left: 45px;
+  display: inline-block;
+
+}
+
+.bahasa img:hover{
+  border-bottom: 10px solid #E4B1F0;
+  transition: 1s border-bottom ease-in-out;
+}
+
+.bahasa{
+  border-bottom: 3px solid yellow;
+}
+
+
+@media (min-width: 600px) {
+
+  /* Styles for tablet devices */
+.onepage h1{
+  color: red;
+}
+
+.twopage h4{
+  font-size: 20px;
+  text-align: center;
+  overflow: visible;
+  width: 550px;
+}
+
+.foto img{
+  margin-left: 60%;
+  width: 500px;
+  height: 300px;
+}
+
+.onepage ol li{
+  margin-left: 200px;
+  display: inline-block;
+  word-spacing: -12px;
+  text-align: center;
+  right: 0;
+  position: relative;
+  z-index: 40000;
+}
+
+.bahasa img{
+  margin-left: 250px;
+  display: inline-block;
+}
+}
